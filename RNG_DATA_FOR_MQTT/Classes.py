@@ -24,7 +24,7 @@ class Modulo_movel_1:
     tensao = 0
     corrente = 0
     incline = [0,0,0] #x,y,z em graus
-class Modulo_movel_1:
+class Modulo_movel_2:
     lim_inf =0
     lim_sup = 100
     tensao = 0

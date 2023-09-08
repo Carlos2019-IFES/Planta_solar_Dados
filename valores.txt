@@ -1,0 +1,2 @@
+tensao = 5
+corrente = 5

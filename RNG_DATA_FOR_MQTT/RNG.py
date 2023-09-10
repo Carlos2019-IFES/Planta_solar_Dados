@@ -7,6 +7,8 @@
 #UM%%numero%%TEMP%%numero%%Radiação%%numero%%Inclinação%%X%%Y%%Z
 import random
 import Classes
+from datetime import datetime
+import time
 
 #insira os limites para as variáveis
 #Os limites servem para todas as variáveis da classe, portanto os valores são compartilhados por tensão e corrente.
@@ -19,8 +21,8 @@ Classes.muda_limites(Classes.Modulo_movel_2, 0,100)
 
 arquivo = open("valores.txt", "w+")
 
-
-Classes.Modulo_fixo_1.tensao = random.randrange(Classes.Modulo_fixo_1.lim_inf,Classes.Modulo_fixo_1.lim_sup )
+#random.seed(Classes.muda_seed())
+Classes.Modulo_fixo_1.tensao = random.randrange(Classes.Modulo_fixo_1.lim_sup )
 arquivo.write("tensao = " + str(Classes.Modulo_fixo_1.tensao) + "\n")
-Classes.Modulo_fixo_1.corrente = random.randrange(Classes.Modulo_fixo_1.lim_inf,Classes.Modulo_fixo_1.lim_sup )
-arquivo.write("corrente = " + str(Classes.Modulo_fixo_1.tensao))
+Classes.Modulo_fixo_1.corrente = random.randrange(Classes.Modulo_fixo_1.lim_sup )
+arquivo.write("corrente = " + str(Classes.Modulo_fixo_1.corrente))

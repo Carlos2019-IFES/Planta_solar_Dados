@@ -1,2 +1,2 @@
-tensao = 5
-corrente = 5
+tensao = 16
+corrente = 49

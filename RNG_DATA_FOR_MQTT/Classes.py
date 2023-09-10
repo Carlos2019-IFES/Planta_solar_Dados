@@ -1,3 +1,9 @@
+from datetime import datetime
+import time
+import random
+
+
+
 class Modulo_fixo_1:
     lim_inf =0
     lim_sup = 100
@@ -57,3 +63,7 @@ def muda_limites(classe, lim_inf, lim_sup):
     classe.lim_inf = lim_inf
     classe.lim_sup = lim_sup
 
+
+def muda_seed():
+    nova_seed = datetime.now().timestamp()#pega a hora atual para gerar o numero aleatório
+    return nova_seed
